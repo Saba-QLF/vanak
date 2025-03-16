@@ -1,0 +1,186 @@
+﻿body {
+    background-color: #f8f9fa;
+    margin-left: 60px;
+    margin-right: 280px;
+    padding: 40px;
+    min-height: 100vh;
+    overflow-x: auto;
+    width: 95%; /* افزایش عرض صفحه */
+    max-width: 1600px; /* محدود کردن بیشینه‌ی عرض */
+    transition: width 0.3s ease-in-out;
+}
+/* اگر در InputLab.css یا هر فایل دیگری استایلی برای .page نوشته‌اید، آن را بررسی کنید. 
+   برای مثال: */
+   .page {
+    min-height: 100vh;    /* صفحه دست‌کم به‌اندازه ارتفاع نمایشگر */
+    overflow-y: auto;     /* امکان اسکرول عمودی */
+    direction: rtl;       /* ترجیحاً برای راست‌چین */
+    /* سایر استایل‌های مورد نیاز */
+  }
+  
+  .ihead {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 1200px;
+    /* بقیه استایل‌هایی که مانع نمایش بقیه محتوا نشود */
+  }
+  
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #c8d1da; /* رنگ هماهنگ با sidebar */
+    padding: 15px 40px;
+    color: white;
+    font-size: 18px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px #888;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px; /* ایجاد فاصله بین هدر و فرم */
+    direction: rtl;
+    text-align: right;
+  
+}
+
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 70px;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 550px;
+    position: right;
+}
+
+    .filter-item label {
+        position: static;
+        background-color: transparent;
+        font-size: 14px;
+        color: #888;
+        pointer-events: auto;
+        margin: 0; /* در صورت نیاز فاصله اضافه کنید */
+    }
+
+    .filter-item select,
+    .filter-item input {
+        position: relative;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: white;
+        width: 300px; /* بسته به نیاز */
+        max-width: 100%;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: border 0.2s ease;
+    }
+
+
+.button.addRow, button.saveData {
+        box-shadow: 0px 4px 6px #888 !important;
+        border: 2px solid #888 !important;
+        background-color: white !important;
+        gap: 30px;
+ }
+    
+    
+.input-lab-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px #888;
+    text-align: right;
+    direction: rtl;
+    
+}
+
+/* اگر خواستید جدول اسکرول نشود، ولی از شلوغی جلوگیری کنید */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; /* تا اعداد در مرکز قرار بگیرند */
+}
+
+    table thead th {
+        background-color: #e5e5e5;
+        padding: 10px;
+        /* می‌توانید عرض ثابت هم بدهید */
+    }
+
+    table tbody td {
+        padding: 10px;
+    }
+
+        table tbody td input {
+            width: 100%;
+            max-width: 110px; /* محدود کردن هر فیلد؛ بسته به تعداد ستون کم‌وزیاد کنید */
+            box-sizing: border-box;
+            font-size: 14px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+/* اگر همچنان ستون‌ها زیاد باشند و از عرض Container فراتر بروند،
+   overflow:auto برای یک div دورِ جدول بگذارید. */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+
+/* اگر خواستید جدول اسکرول نشود، ولی از شلوغی جلوگیری کنید */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; /* تا اعداد در مرکز قرار بگیرند */
+}
+
+    table thead th {
+        background-color: #e5e5e5;
+        padding: 10px;
+        /* می‌توانید عرض ثابت هم بدهید */
+    }
+
+    table tbody td {
+        padding: 10px;
+    }
+
+        table tbody td input {
+            width: 100%;
+            max-width: 110px; /* محدود کردن هر فیلد؛ بسته به تعداد ستون کم‌وزیاد کنید */
+            box-sizing: border-box;
+            font-size: 14px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+/* اگر همچنان ستون‌ها زیاد باشند و از عرض Container فراتر بروند،
+   overflow:auto برای یک div دورِ جدول بگذارید. */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+button {
+    border-color: #dde6ed !important;
+}
+

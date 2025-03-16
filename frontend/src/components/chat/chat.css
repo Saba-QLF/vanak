@@ -1,0 +1,118 @@
+﻿/* استایل کلی فیلترها */
+.dynamic-filters {
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e3e3e3;
+    transition: all 0.3s ease-in-out;
+}
+
+/* تنظیمات عمومی ردیف‌های فیلتر */
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+}
+
+/* تنظیم استایل فیلدهای ورودی */
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(30% - 25px);
+    min-width: 250px;
+    max-width: 320px;
+    text-align: right;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+    .filter-item:hover {
+        background: #eef6ff;
+        border-color: #007bff;
+        transform: translateY(-3px);
+    }
+
+    /* استایل لیبل‌ها */
+    .filter-item label {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #444;
+    }
+
+    /* استایل اینپوت‌ها */
+    .filter-item input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        transition: all 0.3s ease-in-out;
+        background: white;
+    }
+
+        .filter-item input:focus {
+            border-color: #007bff;
+            box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+/* ریسپانسیو برای نمایش بهتر در اندازه‌های مختلف */
+@media screen and (max-width: 1024px) {
+    .filter-item {
+        flex: 1 1 calc(48% - 25px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .filter-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-item {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* دکمه جستجو با طراحی مدرن */
+.filter-button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 240px;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 6px 12px rgba(0, 91, 187, 0.4);
+    letter-spacing: 1px;
+}
+
+    .filter-button:hover {
+        background: linear-gradient(135deg, #0056b3, #003f87);
+        box-shadow: 0px 10px 20px rgba(0, 91, 187, 0.6);
+        transform: translateY(-3px);
+    }
+
+    .filter-button:active {
+        transform: translateY(1px);
+        background: linear-gradient(135deg, #004091, #002e6d);
+    }
