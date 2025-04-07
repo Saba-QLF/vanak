@@ -1,0 +1,11 @@
+ALTER TABLE inputcream CHANGE serial Serial int;
+ALTER TABLE inputcream CHANGE barnameh Barnameh int;
+ALTER TABLE inputcream CHANGE purchase_document PurchaseDocument int;
+ALTER TABLE inputcream CHANGE cream_weight CreamWeight  int;
+ALTER TABLE inputcream CHANGE butter_weight ButterWeight int;
+ALTER TABLE inputcream CHANGE warehouse Warehouse varchar(255);
+ALTER TABLE inputcream CHANGE consumption Consumption tinyint(1);
+DROP TABLE inputcream_recordsinfo;
+RENAME TABLE inputcream_recordsinfo2 TO inputcream_recordsinfo;
+ALTER TABLE inputcream_recordsinfo CHANGE isreportcompleted IsReportCompleted tinyint(1);
+ALTER TABLE inputcream_recordsinfo CHANGE reportnumber ReportNumber int;
