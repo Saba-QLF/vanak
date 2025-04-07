@@ -1,9 +1,0 @@
-@font-face {
-  font-family: 'Vazirmatn-Light';
-  src: 
-       url('../assets/fonts/webfonts/Vazirmatn-Light.woff2' )format('woff'); /* فونت TTF برای پشتیبانی بیشتر */
-}
-
-body {
-  font-family: 'Vazirmatn-Light';
-}
